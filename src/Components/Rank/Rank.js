@@ -21,7 +21,7 @@ import Logo from '../../ComponentsShared/Logo/Logo';
 
 function Rank() {
   const { state } = useLocation();
-  const { data, loading, error } = useFetch("https://nagwawordspractice.onrender.com/", state);
+  const { data, loading, error } = useFetch("https://nagwawordspractice.onrender.com/rank", state);
   const [Rank, SetRank] = useState("");
   let navigate = useNavigate();
 
