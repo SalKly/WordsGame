@@ -1,0 +1,8 @@
+.Logoimg {
+  position: absolute;
+  top: 0;
+  margin-top: 3rem;
+  left: 10px;
+  width: 14vw;
+  object-fit: contain;
+}

@@ -1,0 +1,107 @@
+.PracticeSection {
+  width: "100%";
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.PracticeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 9.6rem;
+  border-top-left-radius: 50%;
+}
+
+.PracticeBtnContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  column-gap: 10rem;
+  row-gap: 7rem;
+}
+h1 {
+  font-weight: 600;
+  font-size: 6.4rem;
+  margin-bottom: 10rem;
+}
+
+/* /////////////////////////////////////ProgressBar/////////////////////////// */
+
+.ProgressBar {
+  width: 60%;
+  margin-bottom: 90px;
+  margin-left: 30px;
+}
+.Circle {
+  border-radius: 100px;
+  width: 3vw;
+  height: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #333;
+}
+.MarkHolder {
+  width: 90%;
+  height: 90%;
+}
+/* /////////////////////////////////////Media queries/////////////////////////// */
+
+@media (max-width: 750px) {
+  html {
+    font-size: 45.5%;
+  }
+  .PracticeContainer {
+    border-top-left-radius: 0;
+  }
+  .PracticeBtnContainer {
+    width: 100vw;
+    column-gap: 0;
+    row-gap: 0;
+    height: 40%;
+    justify-content: end;
+  }
+  h1 {
+    margin-bottom: 5rem;
+  }
+  .btnMain {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border: 1px solid white;
+  }
+  .btnMain:hover {
+    transform: translateY(0);
+    background-color: #222;
+  }
+  .btnMain:hover::after {
+    transform: translateY(0);
+  }
+  .btnMain:hover::before {
+    transform: translateY(0);
+  }
+  .ProgressBar {
+    width: 100%;
+    margin-left: 0;
+  }
+  .Circle {
+    width: 5vw;
+    height: 5vw;
+  }
+}
+
+@media (max-width: 550px) {
+  .ProgressBar {
+    width: 90vw;
+    margin-left: 0;
+  }
+}

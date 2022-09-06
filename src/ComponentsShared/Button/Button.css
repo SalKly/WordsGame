@@ -1,0 +1,58 @@
+.btn {
+  width: 20vw;
+  height: 6rem;
+  color: white;
+  text-align: center;
+  border-radius: 30px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: "Fredoka", sans-serif;
+}
+
+.btnMain {
+  background-color: #333;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.btnMain::after,
+.btnMain::before {
+  content: "";
+  position: absolute;
+  opacity: 0.3;
+  background-color: inherit;
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+.btnMain:hover {
+  transform: translateY(-12px);
+}
+.btnMain:hover::after {
+  transform: translateY(6px);
+}
+.btnMain:hover::before {
+  transform: translateY(4px);
+}
+
+.RankBtn {
+  z-index: 100;
+  margin-top: 30px;
+  background-color: #0367a6;
+  transition: all 1s ease;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.RankBtn:hover {
+  background-color: #f29f05;
+
+  transform: translateY(2px);
+}
